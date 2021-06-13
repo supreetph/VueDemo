@@ -2,13 +2,29 @@ const Counter = {
     data() {
       return {
         counter: 0,
-        message:"Hey Supreet, this is Vue"
+        message:"Hey Supreet, this is Vue",
+        customers:[
+            {
+                name:"tom",
+                city:"bangalore"
+            },
+            {
+                name:"harry",
+                city:"Delhi"
+            },
+            {
+                name:"sally",
+                city:"Mumbai"
+            }
+            
+        ]
       }
     },
     methods:{
-        changeTitle(){
-            this.message="this is new title"
+        changeTitle(value){
+            this.message=value
         }
+       
     }
   }
   
