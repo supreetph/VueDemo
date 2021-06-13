@@ -3,6 +3,7 @@ const Counter = {
       return {
         counter: 0,
         message:"Hey Supreet, this is Vue",
+        blogUrl:"https://theonlysup.wordpress.com",
         customers:[
             {
                 name:"tom",

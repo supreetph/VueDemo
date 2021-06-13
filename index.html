@@ -14,12 +14,17 @@
             Counter: {{ counter }}<button v-on:click="counter++">click to increment</button><br>
 
             {{message}}
+
+         
             
             <button v-on:click="changeTitle('wow title changed huh!!')">click to change</button>
             <br>
             <ul>
-                <li v-for="cust in customers">{{cust.name}}</li>
+                <li v-for="cust in customers">{{cust.name}}<p>-{{cust.city}}</p></li>
             </ul>
+            <br>
+               <!--attribute binding-->
+               <a :href="blogUrl">my blog</a>
         </div>
         <script src="app.js"></script>
     </body>
