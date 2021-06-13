@@ -6,8 +6,11 @@
     <body>
    
         <div id="counter">
-            Counter: {{ counter }}
-            <button v-on:click="counter++">click to increment</button>
+            Counter: {{ counter }}<button v-on:click="counter++">click to increment</button><br>
+
+            {{message}}
+            
+            <button v-on:click="changeTitle()">click to change</button>
         </div>
         <script src="app.js"></script>
     </body>
